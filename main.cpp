@@ -1,13 +1,11 @@
 // largestOfThree.cpp
 //
-// Programmer's name: Dennis Mohle
+// Programmer's name: Angelo G. Apodaca
 // Date: Aug 16, 2023
 //
-// Description of program:
+// Description of program: Program will return which of three number values are the largest 
 //
-// TODO: Describe your program in terms of input, processing, and output
-//
-// This program will input...
+// TODO: Inputs are the user's name, three ints, and output is which of the three is the largest among them
 //
 //
 // References:
