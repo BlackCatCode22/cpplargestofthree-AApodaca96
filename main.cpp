@@ -1,81 +1,46 @@
-// largestOfThree.cpp
-//
-// Programmer's name: Angelo G. Apodaca
-// Date: Aug 16, 2023
-//
-// Description of program: Program will return which of three number values are the largest 
-//
-// TODO: Inputs are the user's name, three ints, and output is which of the three is the largest among them
-//
-//
-// References:
-//
-// Getting started:
-// https://www.w3schools.com/cpp/cpp_getstarted.asp
-// User Input:
-// https://www.w3schools.com/cpp/cpp_user_input.asp
-// Strings:
-// https://www.w3schools.com/cpp/cpp_strings.asp
-
 #include <iostream>
 using namespace std;
 
-int num1 = 0;
-int num2 = 0;
-int num3 = 0;
-int largest = 0;
+int main() {
 
-int main(){
-  cout << "\n\n Welcome to the largest of Three Program\n\n";
+    cout << "\n\nWelcome to Angelo's largest of three program!\n\n";
 
-  // Get the user's name
-  string userName = "";
-  cout << "\n Please enter your name: ";
-  cin >> userName;
+    string userName;
+    int num1, num2, num3, largest;
 
-  // Get all three ints from the user
-  cout << "\n Please enter the first integer: ";
-  cin >> num1;
-  cout << "\n\n Thank you for entering " << num1 << " as your first int!\n";
+    cout << "\nPlease enter your name: ";
+    cin >> userName;
 
-  cout << "\n Please enter the second integer: ";
-  cin >> num2;
-  cout << "\n Thank you for entering " <<num2 << " as your second int! \n";
+    cout << "\n The username is: " << userName;
 
-  cout << "\n Please enter the third and final integer: ";
-  cin >> num3;
-  cout << "\n\n Thank you for entering " << num3 << " as your third int!\n";
+    cout << "\n Enter number one: ";
+    cin >> num1;
 
+    cout << "\n You entered: " << num1 << " for the first number.";
 
-  // Processing Section
-  if (num1 > num2)
-  {
-      if (num1 > num3)
-      {
-          largest = num1;
-      }
-      else
-      {
-          largest = num3;
-      }
-  }
+    cout << "\n Enter number two: ";
+    cin >> num2;
 
-  else
-  {
-      if (num2 > num3)
-      {
-          largest = num2;
-      }
-      else
-      {
-          largest = num3;
-      }
-  }
+    cout << "\n You entered: " << num2 << " for the second number.";
 
-  // Final
-  cout << " the largest number is " << largest << "!";
+    cout << "\n Enter number three: ";
+    cin >> num3;
 
-  return 0;
+    cout << "\n You entered: " << num3 << " for the third number.";
 
+    cout << "\n You entered: " << num1 << ", " << num2 << ", " << num3;
+
+    if (num1 > num2 && num1 > num3) {
+        largest = num1;
+    }
+    else if (num2 > num1 && num2 > num3) {
+        largest = num2;
+    }
+    else if (num3 > num1 && num3 > num2) {
+        largest = num3;
+    }
+
+    cout << "\n The largest of " << num1 << " , " << num2 << " , " << num3 << " is: " << largest;
+
+    return 0;
 }
-
